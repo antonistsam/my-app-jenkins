@@ -10,7 +10,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
   
   <build>
     <sourceDirectory>src</sourceDirectory>
-    <testSourceDirectory>src</testSourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
   </build>
   
 </project>  
