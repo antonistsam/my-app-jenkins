@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app:
-    image: antonistsam/docker-jenkins-example:latest
+    image: node:12-alpine
     command: sh -c "yarn install && yarn run dev"
     ports:
       - 3000:3000
