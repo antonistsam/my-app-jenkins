@@ -10,15 +10,15 @@ services:
     volumes:
       - ./:/test-jenkins-server
     environment:
-      MYSQL_HOST: postgres
+      MYSQL_HOST: mysql
       MYSQL_USER: root
       MYSQL_PASSWORD: secret
       MYSQL_DB: todos
 
   mysql:
-    image: postgres:latest
+    image: mysql:5.7
     volumes:
-      - todo-mysql-data:/var/lib/postgresql/data/
+      - todo-mysql-data:/var/lib/mysql
     environment: 
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: todos
